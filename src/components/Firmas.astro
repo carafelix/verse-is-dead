@@ -1,0 +1,28 @@
+---
+import dayjs from 'dayjs'
+import { getPosts } from '~/utils'
+
+const posts = await getPosts()
+const firmantes = posts
+  .slice()
+  .sort((a, b) => {
+    const aDate = dayjs(a.data.pubDate)
+    const bDate = dayjs(b.data.pubDate)
+    return aDate.isBefore(bDate) ? -1 : 1
+  })
+  .map((firma) => ({
+    nombre: firma.data.title,
+    href: `/posts/${firma.id}`,
+  }))
+---
+
+Suscriben
+<div class="text-left flex flex-wrap gap-2 justify-between">
+  {
+    firmantes.map(({ href, nombre }) => (
+      <a class="m-2 whitespace-nowrap" href={href}>
+        {nombre}
+      </a>
+    ))
+  }
+</div>
