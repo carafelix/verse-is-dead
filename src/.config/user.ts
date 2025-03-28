@@ -46,7 +46,7 @@ export const userConfig: Partial<UserConfig> = {
     ],
   },
   appearance: {
-    theme: 'system',
+    theme: 'dark',
     locale: 'es-es',
   },
   seo: {
