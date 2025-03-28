@@ -1,7 +1,7 @@
 ---
 title: Daniel Medina
 pubDate: 2024-03-28
-categories: ["espía", "XY"]
+categories: ["Espía", "XY"]
 description: "Solo pienso en una ciudad, de la cual, solo conozco que existe, y su nombre, precioso como una joya: Altay."
 ---
 
