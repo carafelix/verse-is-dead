@@ -39,10 +39,10 @@ export const userConfig: Partial<UserConfig> = {
         name: 'Material',
         href: '/categories/Anexo',
       },
-      {
-        name: 'Authors',
-        href: '/authors',
-      },
+      // {
+      //   name: 'Authors',
+      //   href: '/authors',
+      // },
       // {
       //   name: 'Archive',
       //   href: '/archive',

@@ -1,9 +1,102 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
-        path { fill: #000; }
-        @media (prefers-color-scheme: dark) {
-            path { fill: #FFF; }
-        }
-    </style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.846489mm"
+   height="172.48395mm"
+   viewBox="0 0 90.846489 172.48395"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   
+   <style>
+	rect {
+		fill: #000000
+	}
+	@media (prefers-color-scheme: dark){
+		rect {
+			fill: #ffffff
+		}
+	}
+	</style>
+   
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(-77.641321,-53.496478)">
+    <g
+       id="g573"
+       transform="matrix(0.51527949,0.51527949,-0.51527949,0.51527949,104.87108,4.0827725)">
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect534"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="93.764717"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect563"
+         width="40"
+         height="40"
+         x="129.07271"
+         y="51.431351"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect565"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="9.0980368"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect567"
+         width="40"
+         height="40"
+         x="44.406048"
+         y="51.431351"
+         ry="0.10178675" />
+    </g>
+    <g
+       id="g672"
+       transform="matrix(0.72871525,0,0,0.72871525,45.281957,128.50405)">
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect664"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="93.764717"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect666"
+         width="40"
+         height="40"
+         x="129.07271"
+         y="51.431351"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect668"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="9.0980368"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect670"
+         width="40"
+         height="40"
+         x="44.406048"
+         y="51.431351"
+         ry="0.10178675" />
+    </g>
+  </g>
 </svg>
