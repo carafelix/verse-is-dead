@@ -1,0 +1,45 @@
+---
+import { Code } from 'astro:components'
+import { getEntry, render } from 'astro:content'
+import Firmas from '~/components/Firmas.astro'
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import { formatDate } from '~/utils'
+
+const { translate: t } = Astro.locals
+const manifiestPost = await getEntry('spec', 'manifest')
+if (!manifiestPost) {
+  throw new Error('No manifest post found')
+}
+const { Content } = await render(manifiestPost)
+---
+
+<LayoutDefault>
+  <header flex="~ col gap-2">
+    <h1 class="post-title">
+      <a class="not-prose">{manifiestPost.data.title}</a>
+    </h1>
+    <div class="text-3.5">
+      <span>{t('posted_at')}</span>
+      <time>{formatDate(manifiestPost.data.pubDate)}</time>
+    </div>
+  </header>
+  <article class="prose text-justify">
+    <Content />
+    <br />
+    <Firmas />
+    <br />
+    <p>
+      Revisa las secciones de <a href="/categories/Poesía">Poesía</a> y <a href="/categories/Anexo">Material Anexo</a> para
+      profundizar más en el placer. Y si piensas también que el futuro de la poesía se nos viene en plano, y tu cerebro es,
+      al igual que el nuestro, un delicioso maní confitado... <br />
+      <br /> Adhiere a esta noción enviando un texto poético o argumental a
+      <a href="mailto:enano@elversomurio.cl">enano@elversomurio.cl</a> junto con el homónimo de tu persona, y la información
+      que encuentres pertinente o no.
+
+      <br /><br />
+      Se agradece el envío en formato
+      <a href="https://tutorialmarkdown.com/guia">Markdown</a> y la o las categorías a las que crees que el texto pertenece:
+      <Code code=`["Poesía", "Anexo", { etc: Infinity }]` theme={'slack-dark'} lang={'js'} inline={true} />.
+    </p>
+  </article>
+</LayoutDefault>

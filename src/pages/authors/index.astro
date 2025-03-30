@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content'
+import { themeConfig } from '~/.config'
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import { getAuthors, getPathFromAuthors } from '~/utils/index'
+
+const { translate: t } = Astro.locals
+const authorMap = await getAuthors()
+
+const list = getListFromMap(authorMap)
+
+function getListFromMap(map: typeof authorMap) {
+  return Array.from(map).map(([key, value]) => ({
+    name: key,
+    href: `/authors/${getPathFromAuthors(key, themeConfig.site.authorMap)}`,
+    size: t('authors_count', value.length),
+  }))
+}
+---
+
+<LayoutDefault>
+  <section>
+    <h2 class="post-title">{t('Authors')}</h2>
+    <ul class="pl-6" flex="~ col gap-4">
+      {
+        list.map(({ name, href, size }) => (
+          <li>
+            <h3 class="post-title">
+              <a href={href}>{name}</a>
+            </h3>
+            <p>{size}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</LayoutDefault>

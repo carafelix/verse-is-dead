@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content'
+import { themeConfig } from '~/.config'
+import LayoutDefault from '~/layouts/LayoutDefault.astro'
+import type { Post } from '~/types'
+import { formatDate, getAuthors, getPathFromAuthors } from '~/utils'
+
+export async function getStaticPaths() {
+  const authorMap = await getAuthors()
+  return Array.from(authorMap).map(([key, value]) => {
+    const path = getPathFromAuthors(key, themeConfig.site.authorMap)
+    return {
+      params: { author: path },
+      props: { posts: value, name: key },
+    }
+  })
+}
+
+const { posts, name } = Astro.props
+const signatures = await getCollection('signatures')
+
+const signature = signatures.find(({ data }) => data.name === name)?.data.review
+
+function getListItems(posts: Post[]) {
+  const result = posts.map((post) => ({
+    title: post.data.title,
+    href: `/posts/${post.id}/`,
+    date: formatDate(post.data.pubDate),
+  }))
+  return result
+}
+---
+
+<LayoutDefault>
+  <section>
+    <h2 class="post-title">{name}</h2>
+    <p><i>{signature}</i></p>
+    <ul class="pl-6 py-3" flex="~ col gap-4">
+      {
+        getListItems(posts).map(({ title, href, date }) => (
+          <li>
+            <h3 class="post-title">
+              <a href={href}>{title}</a>
+            </h3>
+            <time>{date}</time>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</LayoutDefault>

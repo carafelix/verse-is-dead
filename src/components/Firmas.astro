@@ -1,0 +1,32 @@
+---
+import dayjs from 'dayjs'
+import { getPosts } from '~/utils'
+
+const posts = await getPosts()
+const seen: { [key: string]: boolean } = {}
+const gente = posts
+  .slice()
+  .sort((a, b) => {
+    const aDate = dayjs(a.data.pubDate)
+    const bDate = dayjs(b.data.pubDate)
+    return aDate.isBefore(bDate) ? -1 : 1
+  })
+  .map((post) => ({
+    nombre: post.data.author,
+    href: `/authors/${post.data.author}`,
+  }))
+  .filter((item) => {
+    return seen[item.nombre || ''] ? false : (seen[item.nombre || ''] = true)
+  })
+---
+
+Suscriben
+<div class="text-left flex flex-wrap gap-2 justify-between">
+  {
+    gente.map(({ href, nombre }) => (
+      <a class="m-2 whitespace-nowrap" href={href}>
+        {nombre}
+      </a>
+    ))
+  }
+</div>
