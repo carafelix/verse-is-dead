@@ -52,6 +52,11 @@ export const userConfig: Partial<UserConfig> = {
       //   href: '/categories',
       // },
 
+      {
+        name: 'Chat',
+        href: '/xat',
+      },
+
     ],
     footer: [
       '© %year %author',
@@ -65,5 +70,8 @@ export const userConfig: Partial<UserConfig> = {
     twitter: '',
     meta: [],
     link: [],
+  },
+  comment: {
+    twikoo: { lang: 'es', envId: '', region: '' },
   },
 }
