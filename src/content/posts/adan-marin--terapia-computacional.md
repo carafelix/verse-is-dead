@@ -1,5 +1,5 @@
 ---
-title: Terapia Computacional
+title: Terapia computacional
 pubDate: 2024-03-27
 categories: ["Poesía","Canalla"]
 author: Adán Marín
