@@ -17,6 +17,7 @@ const categoryList = post.data.categories ?? []
   <h1 class="post-title">
     <a class="not-prose" href={`/posts/${post.id}/`}>{post.data.title}</a>
   </h1>
+  <span>{post.data.author}</span>
   <div class="text-3.5">
     <span>{t(post.data.modDate ? 'updated_at' : 'posted_at')}</span>
     <time>{formatDate(post.data.modDate ?? post.data.pubDate)}</time>
