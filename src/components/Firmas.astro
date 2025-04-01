@@ -6,6 +6,11 @@ const posts = await getPosts()
 const seen: { [key: string]: boolean } = {}
 const gente = posts
   .slice()
+  .sort((a, b) => {
+    const aDate = dayjs(a.data.pubDate)
+    const bDate = dayjs(b.data.pubDate)
+    return aDate.isBefore(bDate) ? -1 : 1
+  })
   .map((post) => ({
     nombre: post.data.author,
     href: `/authors/${post.data.author}`,
@@ -18,12 +23,10 @@ const gente = posts
 Suscriben
 <div class="text-left flex flex-wrap gap-2 justify-between">
   {
-    gente
-      .sort(() => (Math.random() > 0.5 ? 1 : -1))
-      .map(({ href, nombre }) => (
-        <a class="m-2 whitespace-nowrap" href={href}>
-          {nombre}
-        </a>
-      ))
+    gente.map(({ href, nombre }) => (
+      <a class="m-2 whitespace-nowrap" href={href}>
+        {nombre}
+      </a>
+    ))
   }
 </div>
