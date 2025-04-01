@@ -18,12 +18,14 @@ export async function getStaticPaths() {
 const { posts, name } = Astro.props
 
 function getListItems(posts: Post[]) {
-  const result = posts.map((post) => ({
-    title: post.data.title,
-    href: `/posts/${post.id}/`,
-    date: formatDate(post.data.pubDate),
-    author: post.data.author,
-  }))
+  const result = posts
+    .sort(() => (Math.random() > 0.5 ? 1 : -1))
+    .map((post) => ({
+      title: post.data.title,
+      href: `/posts/${post.id}/`,
+      date: formatDate(post.data.pubDate),
+      author: post.data.author,
+    }))
   return result
 }
 ---
