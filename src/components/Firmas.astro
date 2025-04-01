@@ -17,12 +17,10 @@ const gente = posts
 Suscriben
 <div class="text-left flex flex-wrap gap-2 justify-between">
   {
-    gente
-      .sort(() => (Math.random() > 0.5 ? 1 : -1))
-      .map(({ href, nombre }) => (
-        <a class="m-2 whitespace-nowrap" href={href}>
-          {nombre}
-        </a>
-      ))
+    gente.map(({ href, nombre }) => (
+      <a href={href} class={`m-2 whitespace-nowrap`} style={`order: ${Math.floor(Math.random() * 99999)};`}>
+        {nombre}
+      </a>
+    ))
   }
 </div>
