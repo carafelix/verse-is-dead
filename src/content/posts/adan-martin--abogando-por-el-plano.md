@@ -1,7 +1,7 @@
 ---
 title: Abogando por el plano
 pubDate: 2024-03-27
-categories: ["Anexo","Canalla"]
+categories: ["Cerebro","Canalla"]
 author: Adán Marín
 slug: abogando-por-el-plano
 ---

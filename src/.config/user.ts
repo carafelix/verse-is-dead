@@ -37,7 +37,7 @@ export const userConfig: Partial<UserConfig> = {
       },
       {
         name: 'Material',
-        href: '/categories/Anexo',
+        href: '/categories/Cerebro',
       },
       // {
       //   name: 'Authors',
