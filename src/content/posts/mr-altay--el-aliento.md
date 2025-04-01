@@ -1,7 +1,7 @@
 ---
 title: El aliento
 pubDate: 2024-04-01
-categories: ["Cerebro", "Botaje"]
+categories: ["Cerebro","Poesía", "Botaje"]
 author: Mr. Altay
 slug: el-aliento
 ---
