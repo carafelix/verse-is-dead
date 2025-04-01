@@ -8,6 +8,7 @@ import LaTeX from '~/components/LaTeX.astro'
 import ThemeScript from '~/components/ThemeScript.astro'
 import '~/styles/global.css'
 import helloImage from '../../public/helloworld.jpg'
+import Posthog from '~/components/analytics/Posthog.astro'
 
 const lang = themeConfig.appearance.locale ?? 'en-us'
 const dark = themeConfig.appearance.theme === 'dark'
@@ -17,6 +18,7 @@ const dark = themeConfig.appearance.theme === 'dark'
   <head>
     <slot name="seo"> <SiteSeo banner={helloImage} /> </slot>
     <LaTeX />
+    <Posthog />
     <ThemeScript />
   </head>
 
