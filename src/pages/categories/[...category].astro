@@ -34,6 +34,7 @@ function getListItems(posts: Post[]) {
     <ul class="pl-6 py-3" flex="~ col gap-4">
       {
         getListItems(posts)
+          .sort(() => (Math.random() > 0.5 ? 1 : -1))
           .map(({ title, href, author }) => (
             <li>
               <h3 class="post-title">
@@ -42,7 +43,6 @@ function getListItems(posts: Post[]) {
               <a href={`/authors/${author}`}>{author}</a>
             </li>
           ))
-          .sort(() => (Math.random() > 0.5 ? 1 : -1))
       }
     </ul>
   </section>
