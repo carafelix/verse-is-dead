@@ -1,7 +1,7 @@
 ---
 title: El ajedrez humano
 pubDate: 2024-03-28
-categories: ["Poesía"]
+categories: ["Poesía","Botaje"]
 author: Mr. Altay
 slug: mi-poder
 ---
