@@ -2,7 +2,6 @@
 import { themeConfig } from '~/.config'
 import SiteFooter from '~/components/SiteFooter.astro'
 import SiteNavigation from '~/components/SiteNavigation.astro'
-import Posthog from '~/components/analytics/Posthog.astro'
 import SiteTitle from '~/components/SiteTitle.astro'
 import SiteSeo from '~/components/SiteSeo.astro'
 import LaTeX from '~/components/LaTeX.astro'
@@ -18,7 +17,6 @@ const dark = themeConfig.appearance.theme === 'dark'
   <head>
     <slot name="seo"> <SiteSeo banner={helloImage} /> </slot>
     <LaTeX />
-    <Posthog />
     <ThemeScript />
   </head>
 
