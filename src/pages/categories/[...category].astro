@@ -34,7 +34,7 @@ function getListItems(posts: Post[]) {
     <ul class="pl-6 py-3" flex="~ col gap-4">
       {
         getListItems(posts).map(({ title, href, author }) => (
-          <li style={`order: ${Math.floor(Math.random() * 99999)};`}>
+          <li class="category-child">
             <h3 class="post-title">
               <a href={href}>{title}</a>
             </h3>
@@ -44,4 +44,9 @@ function getListItems(posts: Post[]) {
       }
     </ul>
   </section>
+  <script>
+    document
+      .querySelectorAll('.category-child')
+      .forEach((el) => el.classList.add(`order: ${Math.floor(Math.random() * 99999)}`))
+  </script>
 </LayoutDefault>
