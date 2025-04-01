@@ -11,7 +11,7 @@ import { themeConfig } from './src/.config'
 // https://astro.build/config
 export default defineConfig({
   site: themeConfig.site.website,
-  prefetch: false,
+  prefetch: true,
   base: '/',
   markdown: {
     remarkPlugins: [
