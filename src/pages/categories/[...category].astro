@@ -45,9 +45,3 @@ function getListItems(posts: Post[]) {
     </ul>
   </section>
 </LayoutDefault>
-
-<script is:inline defer>
-  document.querySelectorAll('.category-li').forEach((el) => {
-    el.style.order = `${Math.floor(Math.random() * 99999)}`
-  })
-</script>
