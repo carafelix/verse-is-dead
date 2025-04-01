@@ -130,7 +130,7 @@ export const LANGUAGES = {
     About: 'Quienes Somos',
     Links: 'Links',
     Manifest: 'Fiesta del maní',
-    Material: 'Anexos',
+    Brain: 'Cerebro',
 
     posted_at: 'Fechado a',
     updated_at: 'Actualizado el',

@@ -36,7 +36,7 @@ export const userConfig: Partial<UserConfig> = {
         href: '/categories/Poesía',
       },
       {
-        name: 'Material',
+        name: 'Brain',
         href: '/categories/Cerebro',
       },
       // {
