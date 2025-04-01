@@ -1,7 +1,7 @@
 ---
 title: Fragancia hermética
 pubDate: 2024-04-02
-categories: ["Cerebro"]
+categories: ["Cerebro", "Genodemia"]
 author: Néstor Perlongher
 slug: fragancia-hermetica
 ---
