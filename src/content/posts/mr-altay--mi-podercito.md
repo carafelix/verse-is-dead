@@ -1,8 +1,8 @@
 ---
-title: Ñom mi podercito
+title: El ajedrez humano
 pubDate: 2024-03-28
 categories: ["Poesía","Espía"]
-author: dm
+author: Mr. Altay
 slug: mi-poder
 ---
 
