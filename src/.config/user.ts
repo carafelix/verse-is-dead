@@ -3,7 +3,7 @@ import type { UserConfig } from '~/types'
 export const userConfig: Partial<UserConfig> = {
   site: {
     title: 'El verso murió',
-    subtitle: 'Tipografías',
+    subtitle: '...Tipografías...',
     author: 'NeoEnanos',
     description: 'Partidarios del choclón',
     website: 'https://elversomurio.cl',
