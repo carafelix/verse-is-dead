@@ -23,9 +23,8 @@ Suscriben
     ))
   }
 </div>
-<script>
+<script is:inline defer>
   document.querySelectorAll('.firma').forEach((el) => {
-    const e = el as HTMLAnchorElement
-    e.style.order = `${Math.floor(Math.random() * 99999)}`
+    el.style.order = `${Math.floor(Math.random() * 99999)}`
   })
 </script>
