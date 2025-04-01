@@ -83,5 +83,3 @@ alimentando.
 
 Este pantano tiene sol propio. Cuida de tu espalda, si aquí te acuestas y te ahogas, podría ser que al abrir con la vista el mundo que en mesetas cuece su felicidad, la misma que hace brillar al paraíso, despiertes. No le cortes la corriente. Sigue avanzando tu banda con tu paso. Que la luz se encienda ahora,
 turbinas.
-
-###### Poema de _Texto Plano_

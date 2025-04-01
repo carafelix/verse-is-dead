@@ -36,5 +36,3 @@ haciéndolas girar... en volutas, que embisten, terminando ardiendo, y que al fi
 un esquema en las cenizas (lo último) plateado o dorado, rojo –si quisieras–, señalando
 la musiquilla, lo difícil que se me ha hecho ornar la _extremidad entera,_ anonadado, del
 irrefrenable deseo de amarte, no es un sinsentido. quitar el silencio...
-
-###### Poema de _OIOIOIIIIOOOI_
