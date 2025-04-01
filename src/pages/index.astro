@@ -1,7 +1,6 @@
 ---
 import { Code } from 'astro:components'
 import { getEntry, render } from 'astro:content'
-import Posthog from '~/components/analytics/Posthog.astro'
 import Firmas from '~/components/Firmas.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
 import { formatDate } from '~/utils'
@@ -49,5 +48,3 @@ const { Content } = await render(manifiestPost)
     </p>
   </article>
 </LayoutDefault>
-
-<Posthog />
