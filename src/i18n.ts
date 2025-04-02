@@ -121,7 +121,7 @@ export const LANGUAGES = {
   },
   'es-es': {
     Home: 'Home',
-    Posts: 'Entradas',
+    Posts: 'Todo',
     Poetry: 'Poesía',
     Categories: 'Categorías',
     Authors: 'Pinganillas',

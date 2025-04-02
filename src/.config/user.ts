@@ -7,7 +7,7 @@ export const userConfig: Partial<UserConfig> = {
     author: 'NeoEnanos',
     description: 'Partidarios del choclón',
     website: 'https://elversomurio.cl',
-    pageSize: 5,
+    pageSize: 20,
     socialLinks: [
       {
         name: 'github',
@@ -27,6 +27,7 @@ export const userConfig: Partial<UserConfig> = {
       },
     ],
     navLinks: [
+
       {
         name: 'Manifest',
         href: '/',
@@ -38,6 +39,10 @@ export const userConfig: Partial<UserConfig> = {
       {
         name: 'Brain',
         href: '/categories/Cerebro',
+      },
+      {
+        name: 'Posts',
+        href: '/posts',
       },
       // {
       //   name: 'Authors',
