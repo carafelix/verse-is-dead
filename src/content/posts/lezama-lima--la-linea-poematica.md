@@ -1,6 +1,6 @@
 ---
 title: La línea poemática
-pubDate: 2024-04-02
+pubDate: 2024-04-01
 categories: ["Cerebro", "Genodemia"]
 author: José Lezama Lima
 slug: la-linea-poematica

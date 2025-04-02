@@ -1,6 +1,6 @@
 ---
 title: Motores de la telekinesia
-pubDate: 2024-04-02
+pubDate: 2024-04-01
 categories: ["Cerebro","Genodemia"]
 author: Enrique Verástegui
 slug: motores-de-la-telekinesia

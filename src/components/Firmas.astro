@@ -1,9 +1,12 @@
 ---
 import { getPosts } from '~/utils'
 
+const { filter, title } = Astro.props
+
 const posts = await getPosts()
 const seen: { [key: string]: boolean } = {}
 const gente = posts
+  .filter(filter ? filter : () => true)
   .map((post) => ({
     nombre: post.data.author,
     href: `/authors/${post.data.author}`,
@@ -13,7 +16,7 @@ const gente = posts
   })
 ---
 
-Suscriben
+<h3>{title}</h3>
 <div class="text-left flex flex-wrap gap-2 justify-between">
   {
     gente.map(({ href, nombre }) => (
@@ -23,6 +26,19 @@ Suscriben
     ))
   }
 </div>
+
+<!-- <h4>Genodemia</h4>
+
+<div class="text-left flex flex-wrap gap-2 justify-between">
+  {
+    genodemia.map(({ href, nombre }) => (
+      <a href={href} class="m-2 whitespace-nowrap firma">
+        {nombre}
+      </a>
+    ))
+  }
+</div> -->
+
 <script is:inline defer>
   document.querySelectorAll('.firma').forEach((el) => {
     el.style.order = `${Math.floor(Math.random() * 99999)}`

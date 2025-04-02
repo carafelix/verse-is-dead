@@ -26,7 +26,7 @@ const { Content } = await render(manifiestPost)
   <article class="prose">
     <Content />
     <br />
-    <Firmas />
+    <Firmas title="Suscriben" filter={(a: any) => !a.data.categories.includes('Genodemia')} />
     <br />
     <p>
       Revisa las secciones de <a href="/categories/Poesía">Poesía</a> y <a href="/categories/Cerebro">Cerebro</a>
@@ -40,9 +40,11 @@ const { Content } = await render(manifiestPost)
       <span class="flex justify-right">
         <Code code=`["Poesía", "Cerebro", { etc: Infinity }]` theme={'slack-dark'} lang={'js'} inline={true} />
       </span>
-      <br />
+    </p>
+    <Firmas title="Genodemia" filter={(a: any) => a.data.categories.includes('Genodemia')} />
+    <p>
       <i>
-        El orden en que se listan los nombres y entradas es de carácter aleatorio.
+        El orden en que se listan nombres y entradas es de carácter aleatorio.
         <br /> La falta de justificado es justificada.</i
       >
     </p>
