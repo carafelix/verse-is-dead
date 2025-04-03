@@ -57,10 +57,10 @@ del texto, solo nos importan en el grado de afectación sobre los símbolos
 vitales. Lo contrario sería jugar con soldaditos de juguete o las muñecas sin
 ver las grandes batallas, sin ver los grandes amores, eso que ocurre al interior
 y que es lo que realmente importa, en la abstracción completa del mundo, con que
-se valen las emociones más profundas. El juego es mental y el cuerpo está
-poseído por los espíritus, las famosas voces, jugando con los bloques de madera
+se valen las emociones más profundas. El juego es mental y el cuerpo
+poseído por lo extraño, las famosas voces o qué, jugando con los bloques de madera
 y las cigarras, con el número y la regla. Todo ello que se aglomera en un
-instante vivo, irremediablemente.
+instante vivo, irremediable.
 
 Ahora, la recreación mental, su historia indivisible de la imagen, poética
 actual por antigua, regresada por futura a origen cierto, exige plano, exige
