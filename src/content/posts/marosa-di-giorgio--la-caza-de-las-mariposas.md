@@ -1,7 +1,9 @@
 ---
 title: La caza de las mariposas
 pubDate: 2024-04-01
-categories: ["Cerebro", "Genodemia"]
+categories:
+  - Cerebro
+  - Genodemia
 author: Marosa di Giorgio
 slug: la-caza-de-las-mariposas
 ---

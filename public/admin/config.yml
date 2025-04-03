@@ -6,16 +6,23 @@ backend:
   base_url: https://elversomurio.cl # change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
 
-public_folder: public/images/uploads
-media_folder: static/
+public_folder: public/uploads
+media_folder: static/imgs
 
 collections:
-  - label: Blog
-    name: blog
+  - label: Posts
+    name: posts
     folder: src/content/posts
     create: true
+    delete: true
     fields:
       - {label: Title, name: title, widget: string}
-      - {label: Publish Date, name: date, widget: datetime}
-      - {label: Featured Image, name: thumbnail, widget: image}
+      - {label: Categories, name: categories, widget: list, field: {label: Category, name: category, widget: string}}
+      - {label: Author, name: author, widget: string, required: false}
       - {label: Body, name: body, widget: markdown}
+      - {label: Slug, name: slug, widget: string, required: false}
+      - {label: Description, name: description, widget: string, required: false}
+      - {label: Draft, name: draft, widget: boolean, default: false, required: false}
+      - {label: Pin, name: pin, widget: boolean, default: false, required: false}
+      - {label: Publish Date, name: pubDate, widget: datetime, format: YYYY-MM-DD}
+      - {label: Modification Date, name: modDate, widget: datetime, format: YYYY-MM-DD, required: false}

@@ -1,4 +1,5 @@
 import mdx from '@astrojs/mdx'
+import netlify from '@astrojs/netlify'
 import sitemap from '@astrojs/sitemap'
 import swup from '@swup/astro'
 import robotsTxt from 'astro-robots-txt'
@@ -6,6 +7,7 @@ import sveltiaCms from 'astro-sveltia-cms'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
+
 import UnoCSS from 'unocss/astro'
 
 import { themeConfig } from './src/.config'
@@ -15,6 +17,7 @@ export default defineConfig({
   site: themeConfig.site.website,
   prefetch: true,
   base: '/',
+
   markdown: {
     remarkPlugins: [
       remarkMath,
@@ -27,6 +30,7 @@ export default defineConfig({
       wrap: true,
     },
   },
+
   integrations: [
     UnoCSS({ injectReset: true }),
     mdx({}),
@@ -44,4 +48,6 @@ export default defineConfig({
     }),
     sveltiaCms({}),
   ],
+
+  adapter: netlify(),
 })
