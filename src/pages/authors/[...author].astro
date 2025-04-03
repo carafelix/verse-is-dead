@@ -37,7 +37,7 @@ function getListItems(posts: Post[]) {
     <p><i>{signature}</i></p>
     <ul class="pl-6 py-3" flex="~ col gap-4">
       {
-        getListItems(posts).map(({ title, href, date }) => (
+        getListItems(posts).map(({ title, href }) => (
           <li>
             <h3 class="post-title">
               <a href={href}>{title}</a>
