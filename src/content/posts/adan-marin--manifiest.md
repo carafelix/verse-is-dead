@@ -65,7 +65,7 @@ instante vivo, irremediable.
 Ahora, la recreación mental, su historia indivisible de la imagen, poética
 actual por antigua, regresada por futura a origen cierto, exige plano, exige
 prosa de la voladura, choclón, exige todo pero nunca por completo verso. El
-reflejo del espíritu, como en la luz, toma siempre el camino de mayor acción. La
+reflejo del espíritu, como la luz, muestra solo el camino de menor acción. La
 palabra, como la luz, toma todos los caminos al mismo tiempo: solo vemos aquello
 que sobrevive a su propia aniquilación. El verso refleja solo lo visible. El
 plano es invisible y busca todas las formas de vida.
