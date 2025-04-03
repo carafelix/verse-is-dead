@@ -3,7 +3,7 @@ title: Los caminos invisibles de la luz
 pubDate: 2024-03-27
 categories: ["Manifiesto"]
 author: Adán Marín
-slug: manifiesto-plano
+slug: los-caminos-invisibles-de-la-luz
 ---
 
 Del mismo modo en que el desarrollo de la técnica en las artes pictóricas solo
