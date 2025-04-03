@@ -1,7 +1,7 @@
 ---
-title: Los invisibles caminos de la luz
+title: Los caminos invisibles
 pubDate: 2024-03-27
-categories: ["Cerebro","Manifiesto"]
+categories: ["Manifiesto"]
 author: Adán Marín
 slug: manifiesto-plano
 ---
