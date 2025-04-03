@@ -1,6 +1,5 @@
 ---
 import type { Post } from '~/types'
-import { formatDate } from '~/utils'
 import PostCategory from './PostCategory.astro'
 
 interface Props {
@@ -8,7 +7,6 @@ interface Props {
 }
 
 const { post } = Astro.props
-const { translate: t } = Astro.locals
 
 const categoryList = post.data.categories ?? []
 ---
@@ -16,11 +14,9 @@ const categoryList = post.data.categories ?? []
 <header flex="~ col gap-2">
   <h1 class="post-title">
     <a class="not-prose" href={`/posts/${post.id}/`}>{post.data.title}</a>
+    <a class="w-fit text-sm" href={`/authors/${post.data.author}`}>{post.data.author}</a>
   </h1>
-  <a style="width: fit-content;" href={`/authors/${post.data.author}`}>{post.data.author}</a>
   <div class="text-3.5">
-    <span>{t(post.data.modDate ? 'updated_at' : 'posted_at')}</span>
-    <time>{formatDate(post.data.modDate ?? post.data.pubDate)}</time>
     {categoryList.map((category) => <PostCategory category={category} />)}
   </div>
 </header>

@@ -2,7 +2,7 @@
 import { themeConfig } from '~/.config'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
 import type { Post } from '~/types'
-import { formatDate, getCategories, getPathFromCategory } from '~/utils'
+import { formatDate, getCategories, getPathFromCategory, getPostDescription } from '~/utils'
 
 export async function getStaticPaths() {
   const categoryMap = await getCategories()

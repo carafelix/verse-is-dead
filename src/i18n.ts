@@ -129,7 +129,7 @@ export const LANGUAGES = {
     Tags: 'Etiquetas',
     About: 'Quienes Somos',
     Links: 'Links',
-    Manifest: 'Fiesta del maní',
+    Manifest: 'Bots a la calle',
     Brain: 'Cerebro',
 
     posted_at: 'Fechado a',

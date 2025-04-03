@@ -1,9 +1,9 @@
 ---
 title: El aliento
 pubDate: 2024-04-01
-categories: ["Cerebro","Poesía", "Botaje"]
+categories: ["Cerebro","Poesía", "Botaje", "Manifiesto"]
 author: Mr. Altay
-slug: el-aliento
+slug: manifiesto-el-aliento
 ---
 
 pero antes de que los sumerios visitaran los antis en busca de estaño, nosotros ya sabíamos aquello del verso y las mnemotécnicas, los paralelismos, las tablas e hilos pintados en viñetas o qillcas, lo que era ritualmente memorizado y recitado para cuando las ceremonias tal y como es hoy descrito por antropologos de un lado y otro del oceano. teniamos nuestras maneras de memorizar y el texto es algo mental, como los diseños, las figurillas alegoricas, es aquello que persiste en el oido y la retina y puede imprimirse con las manos o la boca. el verso fue pues antaño algo que adoptamos, como los antiguos wiracochas, porque teniamos que aprender y rememorar y cantar entonces las cosas que eran importantes, y pues como habia musica y vientos ya no era necesaria la ritmica del aliento, munaymaiwiy, que reservabamos para las visiones espontaneas.

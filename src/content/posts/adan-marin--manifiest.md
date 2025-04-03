@@ -1,11 +1,10 @@
 ---
-title: Manifiesto
-pubDate: 2025-03-28
+title: Las mil caras de dios
+pubDate: 2024-03-27
+categories: ["Cerebro","Manifiesto"]
+author: Adán Marín
+slug: manifiesto-plano
 ---
-
-# El verso está muerto.
-
-Y no basta con el verso libre.
 
 Del mismo modo en que el desarrollo de la técnica en las artes pictóricas solo existió en tanto era necesario representar un conjunto de ideas distintas, y no por si misma, hoy se muere el verso, los cortes de linea y las mil y un divisiones silábicas. No quiere decir que dejen de existir, estos, al igual que los muertos, _permanecerán entre nosotros, como cadáveres al hombro._ Con todo su hedor y material belleza a recuerdo. Porqué a la muerte de la Era de la Información y al nacimiento de la era Topológica, el espíritu se demuestra los medios necesarios para su expresión expansiva, interior. A la luz del cifrado superdenso de la información cuántica, con las redes de teleportación que estas habilitan, las nuevas ideas y formas, no pueden sino nacer.
 

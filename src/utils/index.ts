@@ -38,7 +38,6 @@ export async function getAuthors() {
 
 export async function getPosts(isArchivePage = false) {
   const posts = await getCollection('posts')
-
   posts.sort((a, b) => {
     if (isArchivePage) {
       return dayjs(a.data.pubDate).isBefore(dayjs(b.data.pubDate)) ? 1 : -1
@@ -58,14 +57,14 @@ export async function getPosts(isArchivePage = false) {
 }
 
 const parser = new MarkdownIt()
-export function getPostDescription(post: Post) {
+export function getPostDescription(post: Post, length = 400) {
   if (post.data.description) {
     return post.data.description
   }
 
   const html = parser.render(post.body || '')
   const sanitized = sanitizeHtml(html, { allowedTags: [] })
-  return sanitized.slice(0, 400)
+  return sanitized.slice(0, length)
 }
 
 export function formatDate(date: Date, format: string = 'YYYY-MM-DD') {
