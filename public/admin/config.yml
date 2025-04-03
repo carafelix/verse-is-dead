@@ -1,0 +1,16 @@
+backend:
+  name: github
+  branch: add-sveltia-cms
+  repo: carafelix/verse-is-dead # change this to your repo
+  site_domain: elversomurio.cl # change this to your domain
+  base_url: https://elversomurio.cl # change this to your prod URL
+  auth_endpoint: oauth # the oauth route provided by the integration
+
+  media_folder: static/uploads # Where media files are stored
+  public_folder: /uploads
+  collections:
+    - name: posts
+      label: Posts
+      folder: src/content/posts
+      create: true
+      delete: true

@@ -35,6 +35,9 @@ importers:
       astro-seo:
         specifier: ^0.8.4
         version: 0.8.4(prettier-plugin-astro@0.13.0)(prettier@3.4.2)(typescript@5.7.2)
+      astro-sveltia-cms:
+        specifier: ^0.1.0
+        version: 0.1.0(astro@5.0.2(@types/node@22.10.1)(jiti@1.21.6)(rollup@2.79.1)(terser@5.32.0)(tsx@4.19.1)(typescript@5.7.2)(yaml@2.5.1))
       giscus:
         specifier: ^1.5.0
         version: 1.5.0
@@ -2326,6 +2329,11 @@ packages:
 
   astro-seo@0.8.4:
     resolution: {integrity: sha512-Ou1vzQSXAxa0K8rtNtXNvSpYqOGEgMhh0immMxJeXmbVZac3UKCNWAoXWyOQDFYsZvBugCRSg0N1phBqPMVgCw==}
+
+  astro-sveltia-cms@0.1.0:
+    resolution: {integrity: sha512-2FPiq8X4h8yMczrTPut2tYyNyXJMSSWvz/tFMfejJwNb00SBhjUWzyduG3XOQJbDeOfXzkejd551zpwwhDvT+A==}
+    peerDependencies:
+      astro: ^2.0.0 || ^3.0.0
 
   astro@5.0.2:
     resolution: {integrity: sha512-MKf82vUiTZ2aK+c/8EDnLYIsToBdVVk4PuhhGdE8F/PcuUyS+oIcuCPf30iVf8WCQwXOfnYGnv1JbRjzkqUc3w==}
@@ -8459,6 +8467,10 @@ snapshots:
       - prettier
       - prettier-plugin-astro
       - typescript
+
+  astro-sveltia-cms@0.1.0(astro@5.0.2(@types/node@22.10.1)(jiti@1.21.6)(rollup@2.79.1)(terser@5.32.0)(tsx@4.19.1)(typescript@5.7.2)(yaml@2.5.1)):
+    dependencies:
+      astro: 5.0.2(@types/node@22.10.1)(jiti@1.21.6)(rollup@2.79.1)(terser@5.32.0)(tsx@4.19.1)(typescript@5.7.2)(yaml@2.5.1)
 
   astro@5.0.2(@types/node@22.10.1)(jiti@1.21.6)(rollup@2.79.1)(terser@5.32.0)(tsx@4.19.1)(typescript@5.7.2)(yaml@2.5.1):
     dependencies:

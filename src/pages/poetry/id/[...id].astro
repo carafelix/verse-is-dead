@@ -1,11 +1,11 @@
 ---
-import { getPosts } from '~/utils'
-import DynamicRoute from '../../components/routes/DynamicRoute.astro'
+import DynamicRoute from '~/components/routes/DynamicRoute.astro'
 import type { GetStaticPaths } from 'astro'
+import { getPosts } from '~/utils'
 
 export const getStaticPaths = (async () => {
   const p = await getPosts()
-  const posts = p.filter((post) => post.data.categories.includes('Cerebro'))
+  const posts = p.filter((post) => post.data.categories.includes('Poesía'))
   return posts.map((post, idx) => {
     const prev = posts[idx - 1]
     const next = posts[idx + 1]
@@ -15,12 +15,12 @@ export const getStaticPaths = (async () => {
         entry: post,
         next,
         prev,
-        routePrefix: 'brain',
-        title: 'Cerebro',
+        routePrefix: 'poetry',
+        title: 'Poesía',
       },
     }
   })
 }) satisfies GetStaticPaths
 ---
 
-<DynamicRoute {...Astro.props} route="brain" />
+<DynamicRoute {...Astro.props} route="poetry" />

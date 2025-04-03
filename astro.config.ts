@@ -2,10 +2,12 @@ import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import swup from '@swup/astro'
 import robotsTxt from 'astro-robots-txt'
+import sveltiaCms from 'astro-sveltia-cms'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
 import UnoCSS from 'unocss/astro'
+
 import { themeConfig } from './src/.config'
 
 // https://astro.build/config
@@ -40,5 +42,6 @@ export default defineConfig({
       updateHead: true,
       updateBodyClass: true,
     }),
+    sveltiaCms({}),
   ],
 })

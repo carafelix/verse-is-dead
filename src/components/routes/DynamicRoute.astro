@@ -21,7 +21,7 @@ const { Content } = await render(entry)
 const { translate: t } = Astro.locals
 
 function getUrl(id?: string) {
-  return id ? `/${routePrefix}/${id}` : undefined
+  return id ? `/${routePrefix}/id/${id}` : undefined
 }
 ---
 
