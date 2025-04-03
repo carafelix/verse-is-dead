@@ -1,5 +1,5 @@
 ---
-title: Las mil caras de dios
+title: La cadencia
 pubDate: 2024-03-27
 categories: ["Cerebro","Manifiesto"]
 author: Adán Marín
