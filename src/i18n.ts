@@ -122,14 +122,14 @@ export const LANGUAGES = {
   'es-es': {
     Home: 'Home',
     Posts: 'Todo',
-    Poetry: 'Poesía',
+    Poetry: 'Planos',
     Categories: 'Categorías',
     Authors: 'Pinganillas',
     Archive: 'Archivo',
     Tags: 'Etiquetas',
     About: 'Quienes Somos',
     Links: 'Links',
-    Manifest: 'Bots a la calle',
+    Manifest: 'Libelos',
     Brain: 'Cerebro',
 
     posted_at: 'Fechado a',

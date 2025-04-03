@@ -11,7 +11,7 @@ existió en tanto era necesario representar un conjunto de ideas distintas, y no
 por si misma, hoy se muere el verso, los cortes de linea y las mil y un
 divisiones silábicas. No quiere decir que dejen de existir, estos, al igual que
 los muertos, _permanecerán entre nosotros, como cadáveres al hombro._ Con todo
-su hedor y material belleza a recuerdo. Porqué a la muerte de la Era de la
+su hedor y material belleza a recuerdo. Por que a la muerte de la Era de la
 Información y al nacimiento de la era Topológica, el espíritu se demuestra los
 medios necesarios para su expresión expansiva, interior. A la amanecer del
 cifrado superdenso de la información cuántica, con las redes de teleportación
