@@ -4,16 +4,17 @@ import PostCategory from './PostCategory.astro'
 
 interface Props {
   post: Post
+  route: 'posts' | 'brain' | 'manifiests' | 'poetry'
 }
 
-const { post } = Astro.props
+const { post, route } = Astro.props
 
 const categoryList = post.data.categories ?? []
 ---
 
 <header flex="~ col gap-2">
   <h1 class="post-title">
-    <a class="not-prose" href={`/posts/${post.id}/`}>{post.data.title}</a>
+    <a class="not-prose" href={`/${route}/${post.id}/`}>{post.data.title}</a>
     <a class="w-fit text-sm" href={`/authors/${post.data.author}`}>{post.data.author}</a>
   </h1>
   <div class="text-3.5">

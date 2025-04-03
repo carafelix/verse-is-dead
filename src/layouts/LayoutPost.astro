@@ -4,12 +4,13 @@ import type { Post } from '~/types'
 
 interface Props {
   post: Post
+  route: 'posts' | 'brain' | 'manifiests' | 'poetry'
 }
 
-const { post } = Astro.props
+let { post, route } = Astro.props
 ---
 
 <article class="prose">
-  <PostMeta post={post} />
+  <PostMeta post={post} route={route} />
   <slot />
 </article>
