@@ -14,7 +14,7 @@ content:
         label: Categories
         type: select
         options:
-          values: [ Poesía, Cerebro, Manifiesto ]
+          values: [ Poesía, Cerebro, Manifiesto, Genodemia, Botaje ]
           multiple: true
           creatable: true
       - name: author
