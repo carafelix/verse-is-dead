@@ -20,12 +20,12 @@ content:
       - name: author
         label: Author
         type: string
-      - name: body
-        label: Body
-        type: rich-text
       - name: slug
         label: Slug
         type: string
+      - name: body
+        label: Body
+        type: rich-text
       - name: description
         label: Description
         type: string
