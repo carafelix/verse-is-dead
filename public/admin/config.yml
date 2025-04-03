@@ -6,11 +6,16 @@ backend:
   base_url: https://elversomurio.cl # change this to your prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
 
-  media_folder: static/uploads # Where media files are stored
-  public_folder: /uploads
-  collections:
-    - name: posts
-      label: Posts
-      folder: src/content/posts
-      create: true
-      delete: true
+public_folder: public/images/uploads
+media_folder: static/
+
+collections:
+  - label: Blog
+    name: blog
+    folder: src/content/posts
+    create: true
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Featured Image, name: thumbnail, widget: image}
+      - {label: Body, name: body, widget: markdown}
