@@ -55,8 +55,8 @@ const openGraph: SEOProps['openGraph'] = {
 }
 
 async function getOptimizedImageURL() {
-  const image = props.banner && (await getImage({ src: props.banner, format: 'jpeg' }))
-  return new URL(image?.src ?? '/placeholder.png', Astro.url).toString()
+  const image = props.banner && (await getImage({ src: props.banner, format: 'jpg' }))
+  return new URL(image?.src ?? '/helloworld.jpg', Astro.url).toString()
 }
 ---
 
