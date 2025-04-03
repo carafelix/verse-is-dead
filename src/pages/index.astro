@@ -4,7 +4,7 @@ import { getEntry } from 'astro:content'
 import Landing from '~/components/Landing.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
 
-const plano = await getEntry('posts', 'manifiesto-plano')
+const plano = await getEntry('posts', 'los-caminos-invisibles-de-la-luz')
 
 const { Content } = await render(plano!)
 ---
