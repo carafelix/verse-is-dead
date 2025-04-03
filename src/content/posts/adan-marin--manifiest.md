@@ -1,5 +1,5 @@
 ---
-title: Recreación Mental
+title: Recreación mental
 pubDate: 2024-03-27
 categories: ["Cerebro","Manifiesto"]
 author: Adán Marín
