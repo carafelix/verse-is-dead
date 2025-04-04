@@ -70,6 +70,7 @@ export interface ConfigAnalytics {
   /** google analytics */
   googleAnalyticsId: string
   umamiAnalyticsId: string
+  posthogAnalyticsId: string
 }
 
 export interface ConfigLaTeX {

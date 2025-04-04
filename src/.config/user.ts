@@ -71,6 +71,9 @@ export const userConfig: Partial<UserConfig> = {
     theme: 'dark',
     locale: 'es-es',
   },
+  analytics: {
+    posthogAnalyticsId: 'phc_ePvCXCEx2aScDEtVEXcGBfwyjXQ5JaSwJ8Tc2QN3ldu',
+  },
   seo: {
     twitter: '',
     meta: [],
