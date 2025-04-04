@@ -1,14 +1,20 @@
 ---
-import GoogleAnalytics from '~/components/analytics/GoogleAnalytics.astro'
-import UmamiAnalytics from '~/components/analytics/UmamiAnalytics.astro'
+// import GoogleAnalytics from '~/components/analytics/GoogleAnalytics.astro'
+// import UmamiAnalytics from '~/components/analytics/UmamiAnalytics.astro'
 import { themeConfig } from '~/.config'
+import Posthog from './analytics/Posthog.astro'
 
-const PUBLIC_GOOGLE_ANALYTICS_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID
-const googleAnalyticsId = themeConfig.analytics.googleAnalyticsId || PUBLIC_GOOGLE_ANALYTICS_ID
+// const PUBLIC_GOOGLE_ANALYTICS_ID = import.meta.env.PUBLIC_GOOGLE_ANALYTICS_ID
+// const googleAnalyticsId = themeConfig.analytics.googleAnalyticsId || PUBLIC_GOOGLE_ANALYTICS_ID
 
-const PUBLIC_UMAMI_ANALYTICS_ID = import.meta.env.PUBLIC_UMAMI_ANALYTICS_ID
-const umamiAnalyticsId = themeConfig.analytics.umamiAnalyticsId || PUBLIC_UMAMI_ANALYTICS_ID
+// const PUBLIC_UMAMI_ANALYTICS_ID = import.meta.env.PUBLIC_UMAMI_ANALYTICS_ID
+// const umamiAnalyticsId = themeConfig.analytics.umamiAnalyticsId || PUBLIC_UMAMI_ANALYTICS_ID
+
+const PUBLIC_POSTHOG_ANALYTICS_ID = import.meta.env.PUBLIC_POSTHOG_ANALYTICS_ID
+const posthogAnalyticsId = themeConfig.analytics.posthogAnalyticsId || PUBLIC_POSTHOG_ANALYTICS_ID
 ---
 
-{googleAnalyticsId && <GoogleAnalytics id={googleAnalyticsId} />}
-{umamiAnalyticsId && <UmamiAnalytics id={umamiAnalyticsId} />}
+<!-- {googleAnalyticsId && <GoogleAnalytics id={googleAnalyticsId} />}
+{umamiAnalyticsId && <UmamiAnalytics id={umamiAnalyticsId} />} -->{
+  posthogAnalyticsId && <Posthog id={posthogAnalyticsId} />
+}
