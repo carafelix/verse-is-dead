@@ -16,16 +16,16 @@ const gente = posts
   })
 ---
 
-<h3>{title}</h3>
-<div class="text-left flex flex-wrap gap-2 justify-between">
+<h2 class="text-2xl">{title}</h2>
+<ul class="text-left flex flex-wrap gap-2 justify-between list-none">
   {
     gente.map(({ href, nombre }) => (
-      <a href={href} class="m-2 whitespace-nowrap firma">
-        {nombre}
-      </a>
+      <li class="m-2 whitespace-nowrap firma">
+        <a href={href}>{nombre}</a>
+      </li>
     ))
   }
-</div>
+</ul>
 
 <!-- <h4>Genodemia</h4>
 

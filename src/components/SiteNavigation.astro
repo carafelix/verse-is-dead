@@ -10,9 +10,7 @@ const { translate: t } = Astro.locals
     {
       navLinks.map((nav) => (
         <li>
-          <a class="" href={nav.href}>
-            {t(nav.name)}
-          </a>
+          <a href={nav.href}>{t(nav.name)}</a>
         </li>
       ))
     }

@@ -129,7 +129,7 @@ export const LANGUAGES = {
     Tags: 'Etiquetas',
     About: 'Quienes Somos',
     Links: 'Links',
-    Manifest: 'Libelos',
+    Manifest: 'Despotriques',
     Brain: 'Cerebro',
 
     posted_at: 'Fechado a',
