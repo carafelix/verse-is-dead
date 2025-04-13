@@ -2,7 +2,7 @@
 title: A la luz de una revisión del lenguaje...
 pubDate: 2024-03-29
 categories: ["Poesía"]
-author: Nicolás Arce
+author: Accelerator
 slug: revision-del-lenguaje
 ---
 
