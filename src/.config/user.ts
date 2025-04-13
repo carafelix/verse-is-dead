@@ -23,7 +23,7 @@ export const userConfig: Partial<UserConfig> = {
       },
       {
         name: 'email',
-        href: 'mailto:enano@elversomurio.cl',
+        href: 'mailto:tribilin@elversomurio.cl',
       },
     ],
     navLinks: [
