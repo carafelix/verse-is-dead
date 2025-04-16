@@ -1,7 +1,7 @@
 ---
 import { getEntry } from 'astro:content'
 const c1 = await getEntry('spec', 'console-1')!
-const console_string = c1.body?.split('\n').join('^1000\n')
+const console_string = c1.body?.split('\n').join('^200\n')
 ---
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" is:inline></script>
@@ -12,16 +12,27 @@ const console_string = c1.body?.split('\n').join('^1000\n')
 <script define:vars={{ console_string }}>
   const consolita = document.getElementById('console')
 
-  function scrollConsole() {
+  function wasUserAtBottom() {
+    const tolerance = 20
+    return consolita.scrollTop + consolita.clientHeight >= consolita.scrollHeight - tolerance
+  }
+
+  function scrollToBottom() {
     consolita.scrollTop = consolita.scrollHeight
   }
+  let atBottom = true
 
   const _typed = new Typed('#cursor', {
     strings: [console_string],
     typeSpeed: 2,
     backSpeed: 0,
+    onTypingPaused: () => {
+      atBottom = wasUserAtBottom()
+    },
     onTypingResumed: () => {
-      scrollConsole()
+      if (atBottom) {
+        scrollToBottom() // scroll AFTER content grows
+      }
     },
   })
 </script>
