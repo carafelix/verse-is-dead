@@ -4,37 +4,29 @@ const c1 = await getEntry('spec', 'console-1')!
 c1
 ---
 
-<div id="console"></div>
+<div id="console">
+  <span id="cursor"></span>
+</div>
 
 <script>
-  import gsap from 'gsap'
-  import TextPlugin from 'gsap/TextPlugin'
-
-  gsap.registerPlugin(TextPlugin)
+  import Typed from 'typed.js'
 
   const consolita = document.getElementById('console')!
 
-  const tl = gsap.timeline()
-  const l1 = print()
-
-  tl.to(l1, { text: 'yes' }).to(l1, { text: 'yes...', repeat: 4 }).to(l1, { text: 'yes!!!' })
-  br()
-  const l2 = print()
-  tl.to(l2, { text: 'no' }).to(l2, { text: 'no...', repeat: 4 }).to(l2, { text: 'no!!!' })
-
-  function print() {
-    const message = document.createElement('p')
-    message.style = 'display: inline;'
-    consolita.appendChild(message)
+  function scrollConsole() {
     consolita.scrollTop = consolita.scrollHeight
-    return message
   }
-  function br() {
-    const message = document.createElement('br')
-    consolita.appendChild(message)
-    consolita.scrollTop = consolita.scrollHeight
-    return message
-  }
+
+  const typed = new Typed('#cursor', {
+    strings: [
+      'npm install^1000\n `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...`',
+    ],
+    typeSpeed: 40,
+    backSpeed: 0,
+    onTypingResumed: () => {
+      scrollConsole()
+    },
+  })
 </script>
 
 <style>
