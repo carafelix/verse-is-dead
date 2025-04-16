@@ -9,7 +9,6 @@ const c3 = await getEntry('spec', 'console-3')!
 const console_string = c1.body?.split('\n').join('^200\n')
 ---
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" is:inline></script>
 <noscript
   ><Code code={c1.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
   <Code code={c2.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
@@ -17,46 +16,58 @@ const console_string = c1.body?.split('\n').join('^200\n')
 </noscript>
 
 <div id="console">
-  <span id="cursor"></span>
+    <span class="text-orange-600">neoenanos@sumeria</span><span>:~$ </span>
+    <span id="user-input-1"></span>
+    <span id="typed-1"></span>
+  </div>
 </div>
 
 
-<template id="template">
-<span class="text-orange-600">neoenanos@sumeria</span>~$^1000 scan lit --recursive ./^300
-/universo/maestros/cuerpo/obras/fritura.txt: <span class="text-green-4">OK</span>^300
-/universo/usuarios/mentales/oculto/infra.md: <span class="text-green-4">OK</span>^300
-/planeta/tierra/latam/poesía/actualidad.docx:^300
-    Heuristics.Verse.ContainsMacros <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
-/planeta/tierra/latam/poesía/actualidad.docx: <span class="text-red-6">Eliminado...</span>^300
-/omniverso/matrix/1/chile/sol/árboles/mar.odt: <span class="text-green-4">OK</span>^300
-/omniverso/matrix/2/nubia/océano/mar.odt: <span class="text-green-4">OK</span>^300
-/omniverso/matrix/3/RRSS/poemitas.jpg:^300
-    Exploit.Image.EmbeddedScript <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
-/omniverso/matrix/3/RRSS/poemitas.jpg: <span class="text-red-6">Eliminado...</span>^300
-/planeta/nubia/bar/mental/risas.mp3: <span class="text-green-4">OK</span>^300
-/planeta/interior/exterior/infinito/comedia.pdf: <span class="text-green-4">OK</span>^300
-/vida/sueños/personal/samsara.exe:^300
-    Nadaist.Trojan.Agent-X-504 <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
-/vida/sueños/personal/samsara.exe: <span class="text-red-6">Eliminado...</span>^300
+<!-- <span class="text-orange-600">neoenanos@sumeria</span>:~$ ^1000 -->
 
+<template id="log-1">
+^2400
+<i>Preparando modos mentales^300.^300.^300.</i>^250 
+&#9;<i>high-thinking</i> <strong>ACTIVADO</strong>^250
+&#9;<i>el don</i> <strong>ACTIVADO</strong>^250
+&#9;<i>modo noche</i> <strong>ACTIVADO</strong>^250
+&#9;<i>aura ampliada</i> <strong>ACTIVADO</strong>^250
+<i>Inicializando búsqueda^100.^100.^100.</i>^250
+<template>^310</template><span class="text-gray-300">/universo/maestros/cuerpo/obras/<span class="text-lightblue">fritura.txt</span></span>:<span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/universo/usuarios/mentales/oculto/<span class="text-lightblue">infra.md</span></span>:<span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/planeta/tierra/latam/poesía/<span class="text-lightblue">actualidad.docx</span></span>:
+<span>&#9;Heuristics.Verse.ContainsMacros</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
+<template>^310</template><br><span class="text-gray-300">/planeta/tierra/latam/poesía/<span class="text-lightblue">actualidad.docx</span></span>:<span class="text-red-6"> <strong> Eliminado.</strong></span>
+<template>^310</template><br><span class="text-gray-300">/omniverso/matrix/1/chile/sol/árboles/<span class="text-lightblue">mar.odt</span>:</span><span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/omniverso/matrix/2/nubia/océano/<span class="text-lightblue">mar.odt</span>:</span><span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/omniverso/matrix/3/RRSS/<span class="text-lightblue">poemitas.jpg</span></span>
+<template>^310</template><br><span>&#9;Exploit.Image.EmbeddedScript</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
+<template>^310</template><br><span class="text-gray-300">/omniverso/matrix/3/RRSS/<span class="text-lightblue">poemitas.jpg</span>:</span><span class="text-red-6"> <strong> Eliminado.</strong></span>
+<template>^310</template><br><span class="text-gray-300">/planeta/nubia/bar/mental/<span class="text-lightblue">deliro.mp3</span></span><span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/planeta/interior/exterior/infinito/<span class="text-lightblue">comedia.pdf</span></span><span class="text-green-4"><strong> OK</strong></span>
+<template>^310</template><br><span class="text-gray-300">/vida/sueños/personal/<span class="text-lightblue">samsara.exe</span>:</span>
+<template>^310</template><br><span>&#9;Nadaist.Trojan.Agent-X-504</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
+<template>^310</template><br><span class="text-gray-300">/vida/sueños/personal/<span class="text-lightblue">samsara.exe</span>:</span><span class="text-red-6"> <strong> Eliminado.</strong></span>
+<template>^310</template><br>
+Búsqueda finalizada.
+Removiendo elementos de SHOCK^300.^300.^300.^300
 
------------ RESULTADOS SCAN -----------^300
-Virus conocidos: 144,000^300
-Scan versión: 2.0.25^300
-Scanned directories: 1^300
-Scanned files: 158,464,880^300
-Infected files: 24^300
-Total removed: 2^300
-Data scanned: 81.91 MB^300
-Data read: 332.13 MB (ratio 0.25:1)^300
-Fecha de inicio: 2200 a.C^300
-Fecha final: 2025 d.C^300
+----------- RESULTADOS SCAN -----------
+<span class="prop">Virus conocidos</span>:<span class="text-pink-3"> 144,000</span>
+<br><span class="prop">Simulaciones escaneadas</span>:<span class="text-pink-3"> 8</span>
+<br><span class="prop">Planetas escaneados</span>:<span class="text-pink-3"> 33</span>
+<br><span class="prop">Archivos totales</span>:<span class="text-pink-3"> 158,464,880</span>
+<br><span class="prop">Archivos infectados</span>:<span><strong> NOT POSSIBLE TO COMPUTE</strong></span>
+<br><span class="prop">Plagas eliminadas</span>:<span class="text-pink-3"> 3</span>
+<br><span class="prop">Fecha de inicio</span>:<span class="text-pink-3"> 2200</span><span> a.C</span>
+<br><span class="prop">Fecha final</span>:<span class="text-pink-3"> 2025</span><span> d.C</span>
 </template>
 
-<script define:vars={{ console_string }}>
-// <script >
-  // import Typed from 'typed.js'
-  const consolita = document.getElementById('console')
+
+
+<script >
+  import Typed from 'typed.js'
+  const consolita = document.getElementById('console')!
 
   function wasUserAtBottom() {
     const tolerance = 20
@@ -68,22 +79,27 @@ Fecha final: 2025 d.C^300
   }
   let atBottom = true
 
-  const _typed = new Typed('#cursor', {
-    strings: [
-      document.getElementById('template').getHTML()
-      // console_string
-    ],
-    typeSpeed: 2,
+  // const _host1 = new Typed('#host-1',{
+  //   showCursor: false,
+  //   typeSpeed: 0,
+  //   strings: [document.getElementById('host-template')!.getHTML()]
+  // })
+  const _userinput1 = new Typed('#user-input-1',{
+    showCursor: false,
+    typeSpeed: 60,
+    strings: ['viruscan lit --recursive ./']
+  })
+
+  const strings =  [document.getElementById('log-1')!.getHTML()]
+
+  const _typed = new Typed('#typed-1', {
+    strings,
+    typeSpeed: 1,
     backSpeed: 0,
     contentType: 'html',
-    // preStringTyped: () => {
-    //   atBottom = wasUserAtBottom()
-    // },
-    // onStringTyped: () => {
-    //   if (atBottom) {
-    //     scrollToBottom()
-    //   }
-    // },
+        
+
+    // PA QUE ESTO FUNCIONE HAY QUE PONER ALGUNA PAUSA QUE SEA EN LA CAGA ESA 
     onTypingPaused: () => {
       atBottom = wasUserAtBottom()
     },
@@ -101,7 +117,7 @@ Fecha final: 2025 d.C^300
     background: #000;
     border: 1px solid #444;
     padding: 10px;
-    max-height: 300px;
+    height: 300px;
     overflow-y: scroll;
     white-space: pre-wrap;
   }

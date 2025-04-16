@@ -10,9 +10,9 @@ verso prosa narrativa ensayo sucesos
 Utilice "sudo lit autolaxante" para eliminarlos.
 
 Se instalarán los siguientes placeres NUEVOS:
-frecuencia-universal trance conciencia plano
+    frecuencia-universal trance conciencia plano
 Placeres sugeridos:
-densura
+    densura
 
 Los siguientes placeres se pueden actualizar:
 literatura
