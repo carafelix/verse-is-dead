@@ -1,0 +1,47 @@
+---
+import { getEntry } from 'astro:content'
+const c1 = await getEntry('spec', 'console-1')!
+c1
+---
+
+<div id="console"></div>
+
+<script>
+  import gsap from 'gsap'
+  import TextPlugin from 'gsap/TextPlugin'
+
+  gsap.registerPlugin(TextPlugin)
+
+  const consolita = document.getElementById('console')!
+  print({ txt: '1' })
+  print({ txt: '2', newline: false })
+  print({ txt: '3' })
+  print({ txt: '4' })
+
+  function print({ txt, newline }: { txt?: string; newline?: boolean } = { txt: '', newline: true }) {
+    txt ??= ''
+    newline ??= true
+    const message = document.createElement('p')
+    message.textContent = txt
+    message.style = 'display: inline;'
+    consolita.appendChild(message)
+    consolita.scrollTop = consolita.scrollHeight
+    if (newline) {
+      const br = document.createElement('br')
+      message.appendChild(br)
+    }
+    return message
+  }
+</script>
+
+<style>
+  #console {
+    font-family: monospace;
+    background: #000;
+    border: 1px solid #444;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+  }
+</style>
