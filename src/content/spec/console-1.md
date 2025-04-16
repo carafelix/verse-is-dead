@@ -2,8 +2,7 @@ neoenanos@sumeria:~$ scan lit --recursive ./
 
 /universo/maestros/cuerpo/obras/fritura.txt: OK
 /universo/usuarios/mentales/oculto/infra.md: OK
-/planeta/tierra/latam/poesía/actualidad.docx:
-Heuristics.Verse.ContainsMacros ENCONTRADO
+/planeta/tierra/latam/poesía/actualidad.docx: Heuristics.Verse.ContainsMacros ENCONTRADO
 /planeta/tierra/latam/poesía/actualidad.docx: Eliminado.
 /omniverso/matrix/1/chile/sol/árboles/mar.odt: OK
 /omniverso/matrix/2/nubia/océano/mar.odt: OK

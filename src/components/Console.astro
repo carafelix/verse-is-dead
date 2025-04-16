@@ -1,27 +1,24 @@
 ---
 import { getEntry } from 'astro:content'
 const c1 = await getEntry('spec', 'console-1')!
-c1
+const console_string = c1.body?.split('\n').join('^1000\n')
 ---
 
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" is:inline></script>
 <div id="console">
   <span id="cursor"></span>
 </div>
 
-<script>
-  import Typed from 'typed.js'
-
-  const consolita = document.getElementById('console')!
+<script define:vars={{ console_string }}>
+  const consolita = document.getElementById('console')
 
   function scrollConsole() {
     consolita.scrollTop = consolita.scrollHeight
   }
 
-  const typed = new Typed('#cursor', {
-    strings: [
-      'npm install^1000\n `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...` `installing components...` ^1000\n `Fetching from source...`',
-    ],
-    typeSpeed: 40,
+  const _typed = new Typed('#cursor', {
+    strings: [console_string],
+    typeSpeed: 2,
     backSpeed: 0,
     onTypingResumed: () => {
       scrollConsole()
