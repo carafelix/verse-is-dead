@@ -1,15 +1,61 @@
 ---
+import { Code } from 'astro:components'
 import { getEntry } from 'astro:content'
+
 const c1 = await getEntry('spec', 'console-1')!
+const c2 = await getEntry('spec', 'console-2')!
+const c3 = await getEntry('spec', 'console-3')!
+
 const console_string = c1.body?.split('\n').join('^200\n')
 ---
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" is:inline></script>
+<noscript
+  ><Code code={c1.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
+  <Code code={c2.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
+  <Code code={c3.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
+</noscript>
+
 <div id="console">
   <span id="cursor"></span>
 </div>
 
+
+<template id="template">
+<span class="text-orange-600">neoenanos@sumeria</span>~$^1000 scan lit --recursive ./^300
+/universo/maestros/cuerpo/obras/fritura.txt: <span class="text-green-4">OK</span>^300
+/universo/usuarios/mentales/oculto/infra.md: <span class="text-green-4">OK</span>^300
+/planeta/tierra/latam/poesía/actualidad.docx:^300
+    Heuristics.Verse.ContainsMacros <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
+/planeta/tierra/latam/poesía/actualidad.docx: <span class="text-red-6">Eliminado...</span>^300
+/omniverso/matrix/1/chile/sol/árboles/mar.odt: <span class="text-green-4">OK</span>^300
+/omniverso/matrix/2/nubia/océano/mar.odt: <span class="text-green-4">OK</span>^300
+/omniverso/matrix/3/RRSS/poemitas.jpg:^300
+    Exploit.Image.EmbeddedScript <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
+/omniverso/matrix/3/RRSS/poemitas.jpg: <span class="text-red-6">Eliminado...</span>^300
+/planeta/nubia/bar/mental/risas.mp3: <span class="text-green-4">OK</span>^300
+/planeta/interior/exterior/infinito/comedia.pdf: <span class="text-green-4">OK</span>^300
+/vida/sueños/personal/samsara.exe:^300
+    Nadaist.Trojan.Agent-X-504 <span class="bg-amber text-black p-x-1">ENCONTRADO</span>^300
+/vida/sueños/personal/samsara.exe: <span class="text-red-6">Eliminado...</span>^300
+
+
+----------- RESULTADOS SCAN -----------^300
+Virus conocidos: 144,000^300
+Scan versión: 2.0.25^300
+Scanned directories: 1^300
+Scanned files: 158,464,880^300
+Infected files: 24^300
+Total removed: 2^300
+Data scanned: 81.91 MB^300
+Data read: 332.13 MB (ratio 0.25:1)^300
+Fecha de inicio: 2200 a.C^300
+Fecha final: 2025 d.C^300
+</template>
+
 <script define:vars={{ console_string }}>
+// <script >
+  // import Typed from 'typed.js'
   const consolita = document.getElementById('console')
 
   function wasUserAtBottom() {
@@ -23,15 +69,27 @@ const console_string = c1.body?.split('\n').join('^200\n')
   let atBottom = true
 
   const _typed = new Typed('#cursor', {
-    strings: [console_string],
+    strings: [
+      document.getElementById('template').getHTML()
+      // console_string
+    ],
     typeSpeed: 2,
     backSpeed: 0,
+    contentType: 'html',
+    // preStringTyped: () => {
+    //   atBottom = wasUserAtBottom()
+    // },
+    // onStringTyped: () => {
+    //   if (atBottom) {
+    //     scrollToBottom()
+    //   }
+    // },
     onTypingPaused: () => {
       atBottom = wasUserAtBottom()
     },
     onTypingResumed: () => {
       if (atBottom) {
-        scrollToBottom() // scroll AFTER content grows
+        scrollToBottom()
       }
     },
   })

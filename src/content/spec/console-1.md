@@ -3,19 +3,19 @@ neoenanos@sumeria:~$ scan lit --recursive ./
 /universo/maestros/cuerpo/obras/fritura.txt: OK
 /universo/usuarios/mentales/oculto/infra.md: OK
 /planeta/tierra/latam/poesía/actualidad.docx:
-Heuristics.Verse.ContainsMacros ENCONTRADO
+    Heuristics.Verse.ContainsMacros ENCONTRADO
 /planeta/tierra/latam/poesía/actualidad.docx: Eliminado.
 /omniverso/matrix/1/chile/sol/árboles/mar.odt: OK
 /omniverso/matrix/2/nubia/océano/mar.odt: OK
 
 /omniverso/matrix/3/RRSS/poemitas.jpg:
-Exploit.Image.EmbeddedScript ENCONTRADO
+    Exploit.Image.EmbeddedScript ENCONTRADO
 /omniverso/matrix/3/RRSS/poemitas.jpg: Eliminado.
 
 /planeta/nubia/bar/mental/risas.mp3: OK
 /planeta/interior/exterior/infinito/comedia.pdf: OK
 /vida/sueños/personal/samsara.exe:
-Nadaist.Trojan.Agent-X-504 ENCONTRADO
+    Nadaist.Trojan.Agent-X-504 ENCONTRADO
 /vida/sueños/personal/samsara.exe: Eliminado.
 
 ----------- RESULTADOS SCAN -----------
