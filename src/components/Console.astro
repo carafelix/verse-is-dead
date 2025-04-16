@@ -13,23 +13,26 @@ c1
   gsap.registerPlugin(TextPlugin)
 
   const consolita = document.getElementById('console')!
-  print({ txt: '1' })
-  print({ txt: '2', newline: false })
-  print({ txt: '3' })
-  print({ txt: '4' })
 
-  function print({ txt, newline }: { txt?: string; newline?: boolean } = { txt: '', newline: true }) {
-    txt ??= ''
-    newline ??= true
+  const tl = gsap.timeline()
+  const l1 = print()
+
+  tl.to(l1, { text: 'yes' }).to(l1, { text: 'yes...', repeat: 4 }).to(l1, { text: 'yes!!!' })
+  br()
+  const l2 = print()
+  tl.to(l2, { text: 'no' }).to(l2, { text: 'no...', repeat: 4 }).to(l2, { text: 'no!!!' })
+
+  function print() {
     const message = document.createElement('p')
-    message.textContent = txt
     message.style = 'display: inline;'
     consolita.appendChild(message)
     consolita.scrollTop = consolita.scrollHeight
-    if (newline) {
-      const br = document.createElement('br')
-      message.appendChild(br)
-    }
+    return message
+  }
+  function br() {
+    const message = document.createElement('br')
+    consolita.appendChild(message)
+    consolita.scrollTop = consolita.scrollHeight
     return message
   }
 </script>
