@@ -2,7 +2,7 @@
 title: TESTIMONIO DEL EMPERADOR AMARILLO (黃帝)
 categories:
   - Manifiesto
-author: EMPERADOR AMARILLO (黃帝)
+author: Huangdi (黃帝)
 draft: false
 pin: false
 pubDate: 2025-04-27
