@@ -40,3 +40,16 @@ content:
         type: date
         options:
           format: yyyy-MM-dd
+  - name: authors
+    label: Authors
+    type: collection
+    path: src/content/signatures
+    view: 
+      fields: ["name","review"]
+    fields: 
+      - name: name
+        label: name
+        type: string
+      - name: review
+        label: description
+        type: string
