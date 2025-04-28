@@ -5,6 +5,7 @@ categories:
 author: EMPERADOR AMARILLO (黃帝)
 draft: false
 pin: false
+pubDate: 2025-04-27
 ---
 Yo nací en una pequeña aldea del Lenguaje (母语), hace mucho tiempo. Un día, sin embargo, siguiendo las palabras de mis mayores, decidí abandonar la aldea para estudiar en la ciudad de Literatura (文学). Allí conocí el dorado palacio de la Gramática (语法), el asilverado palacio de la Retórica (辞藻) y el jaspeado Palacio de la Lógica (逻辑). Me formé como discípulo de todos sus maestros, hasta alcanzar por fin la dignidad necesaria para morar en el templo blanco de la Poesía (诗文). Allí cortesanos, sacerdotes y concubinas quisieron agasajarme, planeando que me quedara con ellos por el resto de mis días.
 
