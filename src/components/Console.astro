@@ -1,5 +1,5 @@
 ---
-import { Code } from 'astro:components'
+import Animation from './animation/Animation.astro'
 import { getEntry } from 'astro:content'
 
 const c1 = await getEntry('spec', 'console-1')!
@@ -9,13 +9,10 @@ const c3 = await getEntry('spec', 'console-3')!
 const console_string = c1.body?.split('\n').join('^200\n')
 ---
 
-<noscript
-  ><Code code={c1.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
-  <Code code={c2.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
-  <Code code={c3.body!} theme={'github-dark-high-contrast'} lang={'cadence'} wrap={true} />
-</noscript>
+
 
 <div id="console">
+  <noscript><Animation isNoScript={true}/></noscript>
     <span class="text-orange-600">neoenanos@sumeria</span><span>:~$ </span>
     <span id="user-input-1"></span>
     <span id="typed-1"></span>
@@ -23,51 +20,7 @@ const console_string = c1.body?.split('\n').join('^200\n')
 </div>
 
 
-
-<template id="log-1">
-<template>^3000</template><br>
-<i>Preparando modos mentales^300.^300.^300.</i><template>^250</template>
-&#9;<i>high-thinking</i> <strong>ACTIVADO</strong><template>^250</template>
-&#9;<i>el don</i> <strong>ACTIVADO</strong><template>^250</template>
-&#9;<i>modo noche</i> <strong>ACTIVADO</strong><template>^250</template>
-&#9;<i>aura ampliada</i> <strong>ACTIVADO</strong><template>^250</template>
-<br><i>Inicializando búsqueda^100.^100.^100.</i><template>^250</template>
-<template>^310</template><br><span class="text-gray-300">/universo/maestros/<span class="text-lightblue">fritura.txt</span></span>:<span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/usuarios/mentales/secreto/<span class="text-lightblue">infra.md</span></span>:<span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/tierra/latam/poesía/<span class="text-lightblue">actualidad.docx</span>:</span>
-<br><span>&#9;Heuristics.Verse.ContainsMacros</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
-<template>^310</template><br><span class="text-gray-300">/tierra/latam/poesía/<span class="text-lightblue">actualidad.docx</span></span>:<span class="text-red-6"> <strong> Eliminado.</strong></span>
-<template>^310</template><br><span class="text-gray-300">/simulacro/1/chile/sol/árboles/<span class="text-lightblue">mar.odt</span>:</span><span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/simulacro/2/nubia/océano/<span class="text-lightblue">pubis.odt</span>:</span><span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/simulacro/3/RRSS/<span class="text-lightblue">poemitas.jpg</span></span>
-<br><span>&#9;Exploit.Image.EmbeddedScript</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
-<template>^310</template><br><span class="text-gray-300">/simulacro/3/RRSS/<span class="text-lightblue">poemitas.jpg</span>:</span><span class="text-red-6"> <strong> Eliminado.</strong></span>
-<template>^310</template><br><span class="text-gray-300">/cielo/bar/<span class="text-lightblue">deliro.mp3</span></span><span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/infinito/interior/exterior/<span class="text-lightblue">risas.pdf</span></span><span class="text-green-4"><strong> OK</strong></span>
-<template>^310</template><br><span class="text-gray-300">/vida/sueños/personal/<span class="text-lightblue">samsara.exe</span>:</span>
-<br><span>&#9;Nadaist.Trojan.Agent-X-504</span>&#9;<span class="bg-amber text-black p-x-1">ENCONTRADO</span>
-<template>^310</template><br><span class="text-gray-300">/vida/sueños/personal/<span class="text-lightblue">samsara.exe</span>:</span><span class="text-red-6"> <strong> Eliminado.</strong></span>
-<template>^310</template><br><span class="text-gray-300">/panorama/cultural/<span class="text-lightblue">*</span>:</span><span> OMITIDO</span>
-<template>^310</template><br><span class="text-gray-300">/alta/pinakothek/<span class="text-lightblue">*</span>:</span><span> OMITIDO</span>
-<template>^310</template><br><span class="text-gray-300">/memoria/anciana/<span class="text-lightblue">*</span>:</span><span> PERMISO DENEGADO</span>
-<template>^310</template><br>
-Búsqueda finalizada.
-Removiendo elementos de SHOCK^300.^300.^300.^250
-
------------ RESULTADOS SCAN -----------
-<span class="prop">Virus conocidos</span>:<span class="text-pink-3"> 144,000</span>
-<br><span class="prop">Simulaciones escaneadas</span>:<span class="text-pink-3"> 8</span>
-<br><span class="prop">Planetas escaneados</span>:<span class="text-pink-3"> 33</span>
-<br><span class="prop">Archivos totales</span>:<span class="text-pink-3"> 158,464,880</span>
-<br><span class="prop">Archivos infectados</span>:<span><strong> NO FUE POSIBLE COMPUTAR</strong></span>
-<br><span class="prop">Virus eliminados</span>:<span class="text-pink-3"> 3</span>
-<br><span class="prop">Fecha de inicio</span>:<span class="text-pink-3"> 2200</span><span> a.C</span>
-<br><span class="prop">Fecha final</span>:<span class="text-pink-3"> 2025</span><span> d.C</span>
-
-<br><br><span class="text-orange-600">neoenanos@sumeria</span>:~$ ^1000 sudo lit install plano
-
-
-</template>
+<Animation/>
 
 
 
