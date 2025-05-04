@@ -6,8 +6,7 @@ import Animation from './animation/Animation.astro'
 
 <div id="console">
   <noscript><Animation isNoScript={true}/></noscript>
-    <span class="text-orange-600">neoenanos@sumeria</span><span>:~$ </span>
-    <span id="user-input-1"></span>
+    <span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
     <span id="typed-1"></span>
   </div>
 </div>
@@ -30,19 +29,15 @@ import Animation from './animation/Animation.astro'
     consolita.scrollTop = consolita.scrollHeight
   }
   let atBottom = true
-  
-  const _userinput1 = new Typed('#user-input-1',{
-    showCursor: false,
-    typeSpeed: 60,
-    strings: ['viruscan lit --recursive ./']
-  })
 
   const strings =  [document.getElementById('log-1')!.getHTML()]
 
   const _typed = new Typed('#typed-1', {
     strings,
     typeSpeed: 1,
-    backSpeed: 0,
+    fadeOut: true,
+    loop: true,
+    loopCount: Infinity,
     contentType: 'html',
         
 
