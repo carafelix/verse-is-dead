@@ -1,12 +1,5 @@
 ---
 import Animation from './animation/Animation.astro'
-import { getEntry } from 'astro:content'
-
-const c1 = await getEntry('spec', 'console-1')!
-const c2 = await getEntry('spec', 'console-2')!
-const c3 = await getEntry('spec', 'console-3')!
-
-const console_string = c1.body?.split('\n').join('^200\n')
 ---
 
 
@@ -37,12 +30,7 @@ const console_string = c1.body?.split('\n').join('^200\n')
     consolita.scrollTop = consolita.scrollHeight
   }
   let atBottom = true
-
-  // const _host1 = new Typed('#host-1',{
-  //   showCursor: false,
-  //   typeSpeed: 0,
-  //   strings: [document.getElementById('host-template')!.getHTML()]
-  // })
+  
   const _userinput1 = new Typed('#user-input-1',{
     showCursor: false,
     typeSpeed: 60,
