@@ -1,6 +1,14 @@
 ---
-const { ms } = Astro.props
+import DotsChar from './Dots_char.astro'
+
+const { ms, str = '.', l = 3, noise = false } = Astro.props
 const waitPerDot = Math.round(+ms / 3)
+const noiseMaxLevel = waitPerDot / 2
 ---
 
-<template>^{waitPerDot}</template>.<template>^{waitPerDot}</template>.<template>^{waitPerDot}</template>.
+{
+  Array.from({ length: l }).map((_, i) => {
+    const finalMs = !noise ? waitPerDot : waitPerDot + (Math.random() * noiseMaxLevel - noiseMaxLevel / 2)
+    return <DotsChar ms={finalMs} str={str} />
+  })
+}
