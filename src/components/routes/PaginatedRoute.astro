@@ -1,6 +1,5 @@
 ---
 import CategoriesPosts from '~/components/CategoriesPosts.astro'
-import Pagination from '~/components/Pagination.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
 import LayoutPost from '~/layouts/LayoutPost.astro'
 import { getPostDescription } from '../../utils'
@@ -32,14 +31,9 @@ route ??= 'posts'
       ))
     }
   </section>
-  <Pagination
-    showLeft={Boolean(page.url.prev)}
-    leftTitle={t('prev')}
-    leftUrl={page.url.prev}
-    showRight={Boolean(page.url.next)}
-    rightTitle={t('next')}
-    rightUrl={page.url.next}
-    currentPage={page.currentPage}
-    totalPage={page.lastPage}
-  />
+  <script is:inline defer>
+    document.querySelectorAll('.post-random-order').forEach((el) => {
+      el.style.order = `${Math.floor(Math.random() * 99999)}`
+    })
+  </script>
 </LayoutDefault>
