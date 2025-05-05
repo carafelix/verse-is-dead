@@ -1,13 +1,16 @@
 ---
 import Animation from './animation/Animation.astro'
+// import swup from 'swup'
+// const s = new swup()
+// s.hooks.on('content:replace',(vi)=>{console.log(vi)})
 ---
 
 
 
 <div id="console">
   <noscript><Animation isNoScript={true}/></noscript>
-    <span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
-    <span id="typed-1"></span>
+  <span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
+  <span id="typed-1"></span>
   </div>
 </div>
 
@@ -16,32 +19,31 @@ import Animation from './animation/Animation.astro'
 
 
 
-<script >
+<script>
   import Typed from 'typed.js'
-  const consolita = document.getElementById('console')!
-
-  function wasUserAtBottom() {
-    const tolerance = 50
-    return consolita.scrollTop + consolita.clientHeight >= consolita.scrollHeight - tolerance
-  }
-
-  function scrollToBottom() {
-    consolita.scrollTop = consolita.scrollHeight
-  }
-  let atBottom = true
-
   const strings =  [document.getElementById('log-1')!.getHTML()]
 
-  const _typed = new Typed('#typed-1', {
+  function getTyped(container: HTMLElement){
+    const consolita = document.getElementById('console')!
+    function wasUserAtBottom() {
+      const tolerance = 50
+      return consolita.scrollTop + consolita.clientHeight >= consolita.scrollHeight - tolerance
+    }
+
+    function scrollToBottom() {
+      consolita.scrollTop = consolita.scrollHeight
+    }
+
+    let atBottom = true
+
+    return new Typed(container, {
     strings,
     typeSpeed: 1,
     fadeOut: true,
     loop: true,
     loopCount: Infinity,
     contentType: 'html',
-        
 
-    // PA QUE ESTO FUNCIONE HAY QUE PONER ALGUNA PAUSA QUE SEA EN LA CAGA ESA 
     onTypingPaused: () => {
       atBottom = wasUserAtBottom()
     },
@@ -50,6 +52,17 @@ import Animation from './animation/Animation.astro'
         scrollToBottom()
       }
     },
+  })
+  }
+
+  const typeContainer = document.getElementById('typed-1')!
+  let _typed = getTyped(typeContainer)
+
+  document.addEventListener('swup:content:replace', () => {
+    _typed.destroy()
+    let newTypeContainer = document.getElementById('typed-1')
+    if(!newTypeContainer) return;
+    _typed = getTyped(newTypeContainer)
   })
 </script>
 
