@@ -1,16 +1,13 @@
 ---
 import Animation from './animation/Animation.astro'
-// import swup from 'swup'
-// const s = new swup()
-// s.hooks.on('content:replace',(vi)=>{console.log(vi)})
 ---
 
 
 
 <div id="console">
-  <noscript><Animation isNoScript={true}/></noscript>
-  <span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
-  <span id="typed-1"></span>
+  <noscript><Animation isNoScript={true}/></noscript><span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
+  <span id="typed-choclo"></span>
+  <span id="typed-end"></span>
   </div>
 </div>
 
@@ -39,9 +36,6 @@ import Animation from './animation/Animation.astro'
     return new Typed(container, {
     strings,
     typeSpeed: 1,
-    fadeOut: true,
-    loop: true,
-    loopCount: Infinity,
     contentType: 'html',
 
     onTypingPaused: () => {
@@ -52,15 +46,29 @@ import Animation from './animation/Animation.astro'
         scrollToBottom()
       }
     },
+    onComplete: (self) => {
+      self.stop()
+      console.log(self.cursor)
+      self.cursor.style = 'display: none;'
+      new Typed("#typed-end", {
+        loop: true,
+        loopCount: Infinity,
+        fadeOut: true,
+        typeSpeed: 30,
+        backDelay: 500,
+        showCursor: false,
+        strings: ['...Escuchando...', '...Escribiendo...']
+      })
+    }
   })
   }
 
-  const typeContainer = document.getElementById('typed-1')!
+  const typeContainer = document.getElementById('typed-choclo')!
   let _typed = getTyped(typeContainer)
 
   document.addEventListener('swup:content:replace', () => {
     _typed.destroy()
-    let newTypeContainer = document.getElementById('typed-1')
+    let newTypeContainer = document.getElementById('typed-choclo')
     if(!newTypeContainer) return;
     _typed = getTyped(newTypeContainer)
   })
