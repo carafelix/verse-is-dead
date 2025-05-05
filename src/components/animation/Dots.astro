@@ -1,0 +1,14 @@
+---
+import DotsChar from './WaitedChars.astro'
+
+const { ms, str = '.', l = 3, noise = false } = Astro.props
+const waitPerDot = Math.round(+ms / 3)
+const noiseMaxLevel = waitPerDot / 2
+---
+
+{
+  Array.from({ length: l }).map((_, i) => {
+    const finalMs = !noise ? waitPerDot : waitPerDot + (Math.random() * noiseMaxLevel - noiseMaxLevel / 2)
+    return <DotsChar ms={finalMs} str={str} />
+  })
+}

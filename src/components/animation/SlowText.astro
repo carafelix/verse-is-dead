@@ -1,0 +1,12 @@
+---
+import WaitedChars from './WaitedChars.astro'
+interface Props {
+  ms?: number | string
+  text: string
+}
+
+const { ms = 1, text } = Astro.props
+const textArr = text.split('')
+---
+
+{textArr.map((char) => <WaitedChars ms={ms} str={char} />)}

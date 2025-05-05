@@ -1,0 +1,16 @@
+---
+import AnimationContent from './Content.astro'
+const { isNoScript } = Astro.props
+---
+
+{
+  isNoScript ? (
+    <div id="log-1">
+      <AnimationContent />
+    </div>
+  ) : (
+    <template id="log-1">
+      <AnimationContent />
+    </template>
+  )
+}

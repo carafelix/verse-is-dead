@@ -1,0 +1,66 @@
+---
+import Animation from './animation/Animation.astro'
+---
+
+
+
+<div id="console">
+  <noscript><Animation isNoScript={true}/></noscript>
+    <span class="text-orange-600">neoenanos@sumeria</span><span>:~$</span>
+    <span id="typed-1"></span>
+  </div>
+</div>
+
+
+<Animation/>
+
+
+
+<script >
+  import Typed from 'typed.js'
+  const consolita = document.getElementById('console')!
+
+  function wasUserAtBottom() {
+    const tolerance = 50
+    return consolita.scrollTop + consolita.clientHeight >= consolita.scrollHeight - tolerance
+  }
+
+  function scrollToBottom() {
+    consolita.scrollTop = consolita.scrollHeight
+  }
+  let atBottom = true
+
+  const strings =  [document.getElementById('log-1')!.getHTML()]
+
+  const _typed = new Typed('#typed-1', {
+    strings,
+    typeSpeed: 1,
+    fadeOut: true,
+    loop: true,
+    loopCount: Infinity,
+    contentType: 'html',
+        
+
+    // PA QUE ESTO FUNCIONE HAY QUE PONER ALGUNA PAUSA QUE SEA EN LA CAGA ESA 
+    onTypingPaused: () => {
+      atBottom = wasUserAtBottom()
+    },
+    onTypingResumed: () => {
+      if (atBottom) {
+        scrollToBottom()
+      }
+    },
+  })
+</script>
+
+<style>
+  #console {
+    font-family: monospace;
+    background: #000;
+    border: 1px solid #444;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+    white-space: pre-wrap;
+  }
+</style>

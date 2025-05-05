@@ -1,12 +1,7 @@
 ---
-import { render } from 'astro:content'
-import { getEntry } from 'astro:content'
+import Console from '~/components/Console.astro'
 import Landing from '~/components/Landing.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
-
-const plano = await getEntry('posts', 'los-caminos-invisibles-de-la-luz')
-
-const { Content } = await render(plano!)
 ---
 
 <LayoutDefault>
@@ -14,7 +9,7 @@ const { Content } = await render(plano!)
     <h1 class="mb-0 pb-0">El verso está muerto.</h1>
     <p class="mt-0 pt-0">Y no basta con el verso libre.</p>
 
-    <Content />
+    <Console />
     <Landing />
   </article>
 </LayoutDefault>
