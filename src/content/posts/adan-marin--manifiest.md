@@ -9,6 +9,8 @@ pin: false
 pubDate: 2024-03-27
 ---
 
+El verso murió. Y no basta con el verso libre.
+
 Del mismo modo en que el desarrollo de la técnica en las artes pictóricas solo existió en tanto era necesario representar un conjunto de ideas distintas, y no por si misma, hoy se muere el verso, los cortes de linea y las mil y un divisiones silábicas. No quiere decir que dejen de existir, estos, al igual que los muertos, _permanecerán entre nosotros, como cadáveres al hombro._ Con todo su hedor y material belleza a recuerdo. Por que a la muerte de la Era de la Información y al nacimiento de la era Topológica, el espíritu se demuestra los medios necesarios para su expresión expansiva, interior. A la amanecer del cifrado superdenso de la información cuántica, con las redes de teleportación que estas habilitan, las nuevas ideas y formas, no pueden sino nacer.
 
 Aquí no buscamos definir el futuro ni mucho menos sus ideas, pero estamos definitivamente a la búsqueda. Su descubrimiento y la impresión palpita clamas de aires nuevos, esto no puede quedar a la deriva. Así entonces como antes se apreciaban los versos de "arte mayor", y aún hoy, somos heridos por los grandes versos del pasado, no pensamos quedarnos cruzados de brazos, sino con las manos en las axilas y la mente abstracta, funcionando alto, demasiado alto. Vivimos en el plano y estamos buscando. Cantamos un único verso muy largo, casi infinito, que no termina jamás, porque eso nos permite, al igual que en las enormes areas verdes, encontrar tanto el pastizal y la supuestas vacas voladoras, como el humedal y los gusanos y los bichos. Un solo verso, uno solo e infinito, que se deje cantar por todas partes.
