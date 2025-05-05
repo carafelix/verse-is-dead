@@ -48,7 +48,7 @@ import Animation from './animation/Animation.astro'
     },
     onComplete: (self) => {
       self.stop()
-      console.log(self.cursor)
+      // @ts-ignore
       self.cursor.style = 'display: none;'
       new Typed("#typed-end", {
         loop: true,
