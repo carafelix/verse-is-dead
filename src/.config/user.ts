@@ -3,8 +3,8 @@ import type { UserConfig } from '~/types'
 export const userConfig: Partial<UserConfig> = {
   site: {
     title: 'El verso murió',
-    subtitle: '...Tipografías...',
-    author: 'NeoEnanos',
+    subtitle: '...Tipografías del planisterio...',
+    author: 'NeoEnanos Chocloneros',
     description: 'Partidarios del choclón',
     website: 'https://elversomurio.cl',
     pageSize: Infinity,
