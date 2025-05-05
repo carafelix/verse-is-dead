@@ -1,19 +1,15 @@
 ---
-import PaginatedRoute from '../../components/routes/PaginatedRoute.astro'
+import IndexRoute from '../../components/routes/IndexRoute.astro'
 import type { GetStaticPaths } from 'astro'
 import { themeConfig } from '~/.config'
 import { getPosts } from '../../utils'
+import type { Post } from '~/types'
 
 export const getStaticPaths = (async ({ paginate }) => {
   const p = await getPosts()
-  const posts = p.filter((post) => post.data.categories.includes('Poesía'))
-  posts.sort((a, b) => {
-    if (a.data.pin && !b.data.pin) return -1
-    if (!a.data.pin && b.data.pin) return 1
-    return 0
-  })
+  const posts = p.filter((post: Post) => post.data.categories.includes('Poesía'))
   return paginate(posts, { pageSize: themeConfig.site.pageSize })
 }) satisfies GetStaticPaths
 ---
 
-<PaginatedRoute {...Astro.props} category="Poesía" title="Planos poéticos" route="poetry" />
+<IndexRoute {...Astro.props} category="Poesía" title="Planos poéticos" route="poetry" />

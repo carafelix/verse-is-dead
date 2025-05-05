@@ -10,7 +10,7 @@ interface Props {
 let { post, route } = Astro.props
 ---
 
-<article class="prose">
+<article class="prose post-random-order">
   <PostMeta post={post} route={route} />
   <slot />
 </article>

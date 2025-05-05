@@ -1,6 +1,6 @@
 ---
 import { getPosts } from '~/utils'
-import DynamicRoute from '../../components/routes/DynamicRoute.astro'
+import PostRoute from '../../components/routes/PostRoute.astro'
 import type { GetStaticPaths } from 'astro'
 
 export const getStaticPaths = (async () => {
@@ -23,4 +23,4 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths
 ---
 
-<DynamicRoute {...Astro.props} route="brain" />
+<PostRoute {...Astro.props} route="brain" />

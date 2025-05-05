@@ -7,7 +7,7 @@ export const userConfig: Partial<UserConfig> = {
     author: 'NeoEnanos',
     description: 'Partidarios del choclón',
     website: 'https://elversomurio.cl',
-    pageSize: 6,
+    pageSize: Infinity,
     socialLinks: [
       {
         name: 'github',
