@@ -21,7 +21,7 @@ import Animation from './animation/Animation.astro'
   const consolita = document.getElementById('console')!
 
   function wasUserAtBottom() {
-    const tolerance = 20
+    const tolerance = 50
     return consolita.scrollTop + consolita.clientHeight >= consolita.scrollHeight - tolerance
   }
 

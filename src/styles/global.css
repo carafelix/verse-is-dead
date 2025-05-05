@@ -3,6 +3,7 @@
   --uno-colors-background: theme('colors.background');
   --uno-fonts-ui: theme('fontFamily.ui');
   --uno-colors-shadow: theme('colors.shadow');
+  font-size: large;
 }
 html {
   --at-apply: antialiased;
