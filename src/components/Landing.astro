@@ -1,5 +1,4 @@
 ---
-import { Code } from 'astro:components'
 import Firmas from './Firmas.astro'
 import { getPosts } from '~/utils'
 const posts = (await getPosts()).map((post) => post.id)
@@ -7,29 +6,16 @@ const posts = (await getPosts()).map((post) => post.id)
 
 <div>
   <p>
-    Esta sitio es intemporal, no tiene entradas ni salidas, no existe las noticias, no importa el orden porque el tiempo
-    se junta, no somos una red social. Esto no es una revista, sino un chat directo con el cielo.
+    Intemporal, sin entradas ni salidas, no hay noticia. No importa el orden porque el tiempo se junta: no somos una
+    red: mucho menos es social. Esto no es una revista, esto es un chat directo con el cielo.
   </p>
   <p>
-    Entra por donde quieras. Todo va hacía algún lugar. Las secciones principales son: <a href="/manifiests/"
-      >Manifiestos</a
-    >, <a href="/poetry">Poesía</a> y <a href="/brain">Cerebro</a>. Profundiza en el placer.
+    Todo va hacía algún lugar y de todo lugar llega. <a href="/manifiests/">Manifiestos</a>, <a href="/poetry">Poesía</a
+    > y <a href="/brain">Cerebro</a>.
   </p>
-  <p>¿No te decides? Comienza con un <a id="random-href-post">Texto Aleatorio</a></p>
+  <p><a id="random-href-post">Da lo mismo.</a></p>
   <p>
-    Si piensas también que el futuro de la poesía se nos viene en plano o como quieras llamarle a los ecos de sumeria, y
-    tu mente es, al igual que la nuestra, un delicioso maní confitado... Puedes enviar un texto a
-    <a href="mailto:txt@elversomurio.cl">txt@elversomurio.cl</a> junto con el homónimo de tu persona y la información que
-    encuentres pertinente o no. Se agradece el envío en formato
-    <a href="https://tutorialmarkdown.com/guia">Markdown</a> y la o las categorías a las que creas que el texto pertenece:
-    <span class="flex justify-right">
-      <Code
-        code=`["Poesía", "Cerebro", "Manifiesto", { etc: Infinity }]`
-        theme={'slack-dark'}
-        lang={'js'}
-        inline={true}
-      />
-    </span>
+    <a href="mailto:txt@elversomurio.cl">txt@elversomurio.cl</a>
   </p>
 </div>
 
